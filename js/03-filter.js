@@ -9,7 +9,7 @@
 
 const numbers = [5, 10, 15, 20, 25];
 
-// const filteredNumbers
+// const filteredNumbers = numbers.filter(number => number > 10);
 // console.log(filteredNumbers);
 
 const players = [
@@ -20,23 +20,26 @@ const players = [
   { id: 'player-5', name: 'Chelsy', timePlayed: 280, points: 48, online: true },
 ];
 
+// console.table(players);
+
 /*
  *Отримуєємо масив усіх онлайн гравців
  */
 
-// const onlinePlayers
+// const onlinePlayers = players.filter(player => player.online);
 // console.table(onlinePlayers);
 
 /*
  * Отримуєємо масив усіх оффлайн гравців
  */
 
-// const offlinePlayers
+// const offlinePlayers = players.filter(player => !player.online);
 // console.table(offlinePlayers);
 
+// console.table(players);
 /*
  * Отримуємо список хардкорних гравців з часом більше 250
  */
 
-// const hardcorePlayers
+// const hardcorePlayers = players.filter(player => player.timePlayed < 250);
 // console.table(hardcorePlayers);

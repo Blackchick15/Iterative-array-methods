@@ -5,6 +5,7 @@
  */
 
 const numbers = [5, 10, 15, 20, 25];
+// const number = numbers.find(number => number === 10);
 
 // console.log(number);
 
@@ -20,15 +21,12 @@ const players = [
  * Шукаємо гравця по id
  */
 const playerIdToFind = 'player-3';
-// const playerWithId
-// console.log(playerWithId);
-
-// console.log(finPlayerById(players, 'player-1'));
-// console.log(finPlayerById(players, 'player-4'));
+const playerWithId = players.find(player => player.id === playerIdToFind);
+console.log(playerWithId);
 
 /*
  * Шукаємо гравця по імені
  */
 const playerNameToFind = 'Poly';
-// const playerWithName
-// console.log(playerWithName);
+const playerWithName = players.find(player => player.name === playerNameToFind);
+console.log(playerWithName);
