@@ -6,3 +6,4 @@
 - filter
 - find
 - every и some
+- reduce
