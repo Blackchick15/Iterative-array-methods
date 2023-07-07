@@ -7,8 +7,16 @@
 
 const numbers = [5, 10, 15, 20, 25];
 
-// const total
-// console.log(total);
+const total = numbers.reduce((acc, numbers) => {
+  console.log('acc', acc);
+  console.log('numbers', numbers);
+
+  return acc + numbers;
+
+} , 0);
+
+console.log(total);
+
 
 // accumulator = 0 -> number = 5 -> return 0 + 5
 // accumulator = 5 -> number = 10 -> return 5 + 10
@@ -69,3 +77,13 @@ const tweets = [
 
 // const allTags
 // console.log(allTags);
+
+const apple =['redApple', 'goldApple', 'greenApple' ]
+const goodApple = ('goldApple' , 'greenApple')
+for(let i = 0; i < apple.length; i += 1){
+  if (apple[i] < goodApple ){
+    continue;
+  }
+  // console.log(goodApple);
+}
+console.log(goodApple);
